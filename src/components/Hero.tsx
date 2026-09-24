@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone, MapPin, Download } from "lucide-react";
-import { Button } from "./ui/button";
+import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { ThreeBackground } from "./ThreeBackground";
 
 export const Hero = () => {
@@ -114,32 +113,6 @@ export const Hero = () => {
               ))}
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.9 }}
-              className="pt-8"
-            >
-              <a
-                href="https://drive.google.com/file/d/1vMQQjcMTM04pqBjheWz5cxw0QwsZfNpr/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-neon-cyan to-neon-purple hover:opacity-90 text-background font-semibold px-8 py-6 text-lg rounded-full group relative overflow-hidden"
-                >
-                  <motion.div
-                    className="absolute inset-0 bg-white/20"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.5 }}
-                  />
-                  <Download className="mr-2 group-hover:animate-bounce" size={20} />
-                  Download Resume
-                </Button>
-              </a>
-            </motion.div>
           </motion.div>
 
           {/* Scroll Indicator */}
